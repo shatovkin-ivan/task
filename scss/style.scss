@@ -1,0 +1,25 @@
+* {
+    font-family: 'Lato', sans-serif;
+    color: #666;
+    font-size: 62.5%;
+}
+a {
+    text-decoration: none;
+}
+body, html {
+    max-width: 100%;
+}
+ul, address, .col-xl-6, .col-xl-4, .col-lg-4 {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    margin: 0 auto;
+    width: auto;
+    max-width: 1170px;
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+@import "general";
