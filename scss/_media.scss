@@ -244,18 +244,14 @@
     .projects {
         padding: 50px 0px;
         img {
-            width: 100%;
-            margin: 0 auto;
+            overflow: hidden;
         }
         &__block {
-            width: 90%;
-            max-width: 320px;
-            display: block;
-            margin: 0 auto;
+            overflow: hidden;
         }
     }
     .info {
-        width: 90%;
+        overflow: hidden;
     }
     .problems {
         padding: 100px 0px;
