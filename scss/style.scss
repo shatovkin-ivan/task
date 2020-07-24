@@ -6,6 +6,9 @@
 a {
     text-decoration: none;
 }
+button {
+    outline: none;
+}
 body, html {
     max-width: 100%;
 }
@@ -23,3 +26,4 @@ ul, address, .col-xl-6, .col-xl-4, .col-lg-4 {
 }
 
 @import "general";
+@import "media";
