@@ -1,8 +1,13 @@
 @media (max-width: 1200px) {
+    .advantages__frame {
+        max-width: 350px;
+        height: 380px;
+    }
     .advantages__block {
-        width: 400px;
-        right: -6%;
-        bottom: -4%;
+        width: 350px;
+        height: 380px;
+        right: -10%;
+        bottom: -8%;
     }
     .item {
         margin-bottom: 70px;
@@ -10,7 +15,6 @@
             left: 35%;
         }
     }
-
 }
 @media (max-width: 991px) {
     .menu {

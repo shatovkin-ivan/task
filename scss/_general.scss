@@ -55,6 +55,11 @@
         font-weight: bold;
         color: #393939;
         text-transform: uppercase;
+        text-decoration: none;
+    }
+    a:hover{
+        color:#ffb619;
+        transition: .3s;
     }
 }
 .search {
@@ -67,7 +72,7 @@
 
 .handyman {
     padding: 171px 0px 136px 0px;
-    background: url(../img/bg/bg1.jpg) center (center/ cover) no-repeat;
+    position: relative;
     &__content {
         margin-top: 20px;
     }
@@ -84,6 +89,16 @@
         margin-bottom: 42px;
     }
 }
+.handyman::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg/bg.jpg);
+    filter: brightness(20%);
+}
 .button {
     font-size: 1.5rem;
     font-weight: bold;
@@ -91,6 +106,10 @@
     border: none;
     color: #fff;
     height: 50px;
+}
+button:hover {
+    background-color: #393939;
+    transition: .3s;
 }
 .button_yellow {
     background-color: #ffb619;
@@ -143,18 +162,18 @@
         border: solid 4px #e6e6e6;
     }
     &__block {
-        width: 423px;
+        width: 390px;
         height: 413px;
         background-color: #e6e6e6;
         position: absolute;
-        right: -5%;
-        bottom: -7%;
+        right: -12%;
+        bottom: -5%;
         img {
             width: 100%;
         }
     }
     &__content {
-        padding-left: 60px;
+        padding-left: 70px;
     }
     &__title {
         font-size: 3rem;
@@ -215,7 +234,7 @@
 
 .services {
     padding: 80px 0px 101px 0px;
-    background: url(../img/bg/bg3.jpg) center (center/ cover) no-repeat;
+    position: relative;
     &__title {
         font-size: 3rem;
         font-weight: 900;
@@ -224,6 +243,17 @@
         text-transform: uppercase;
         margin-bottom: 20px;
     }
+}
+.services::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg/bg.jpg);
+    filter: brightness(20%) grayscale(100%);
+    z-index: -5;
 }
 .slick-initialized .slick-slide {
     display: flex;
@@ -253,6 +283,7 @@
     }
     &__item:hover {
         background-color: #1c3e9b;
+        transition: .3s;
     }
     &__title {
         font-size: 2.4rem;
@@ -279,6 +310,9 @@
     border: none;
     background-color: #656565;
 }
+.slick-prev:hover {
+    background-color: #656565;
+}
 .slick-prev:focus {
     outline: none;
 }
@@ -303,6 +337,9 @@
     height: 6px;
     background-color: #656565;
     border: none;
+}
+.slick-next:hover {
+    background-color: #656565;
 }
 .slick-next:focus {
     outline: none;
@@ -334,6 +371,7 @@
 
 .projects {
     padding: 80px 0px 100px 0px;
+    overflow: hidden;
     &__title {
         font-size: 3rem;
         font-weight: 900;
@@ -407,6 +445,7 @@
     opacity: 1;
     background-color: rgba(28, 62, 155, 0.9);
     z-index: 5;
+    transition: .3s;
 }
 .button_projects {
     display: block;
@@ -420,7 +459,7 @@
 
 .problems {
     padding: 187px 0px 225px 0px;
-    background: url(../img/bg/bg4.jpg) center (center/ cover) no-repeat;
+    position: relative;
     &__title {
         font-size: 3.6rem;
         font-weight: bold;
@@ -428,6 +467,17 @@
         width: 40%;
         margin-bottom: 40px;
     }
+}
+.problems::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg/bg.jpg);
+    filter: brightness(30%) grayscale(100%);
+    z-index: -100;
 }
 .button_telephone {
     background-color: #ffb619;
@@ -439,7 +489,7 @@
 
 .feedback {
     padding: 80px 0px 100px 0px;
-    background: url(../img/bg/bg5.jpg) center (center/ cover) no-repeat;
+    background: url(../img/bg/bg2.jpg) center (center/ auto) repeat;
     &__title {
         font-size: 3rem;
         font-weight: 900;
@@ -490,6 +540,10 @@ textarea {
     font-size: 1.5rem;
     font-weight: bold;
     text-transform: uppercase;
+}
+.submit:hover {
+    background-color: #393939;
+    transition: .3s;
 }
 
 // partners
@@ -580,6 +634,11 @@ textarea {
     &__link {
         font-size: 1.5rem;
         color: #999999;
+    }
+    &__link:hover {
+        color: #ffffff;
+        transition: .3s;
+        text-decoration: none;
     }
 }
 .discount {
