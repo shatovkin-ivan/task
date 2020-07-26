@@ -3,7 +3,6 @@
     background: #f2f2f2 center (center/ cover) no-repeat;
     max-height: 50px;
     display: flex;
-    justify-content: space-between;
     &__text {
         font-size: 1.5rem;
     }
@@ -30,8 +29,6 @@
 
 .header {
     padding: 35px 0px;
-    display: flex;
-    justify-content: space-between;
     height: 120px;
     background-color: #fff;
     &__section {
@@ -109,6 +106,7 @@
 }
 button:hover {
     background-color: #393939;
+    border: solid 2px #fff;
     transition: .3s;
 }
 .button_yellow {
@@ -147,8 +145,8 @@ button:hover {
 .phone {
     width: 17px;
     height: 26px;
-    fill: #ffffff;
     margin-right: 13px;
+    fill: #ffffff;
 }
 
 // advantages
@@ -355,6 +353,27 @@ button:hover {
     top: -4px;
     right: -5px;
     border-left-color: #656565;
+}
+.slick-dots {
+    position: absolute;
+    bottom: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    list-style: none;
+    button {
+        border: none;
+        border-radius: 50%;
+        height: 12px;
+        width: 12px;
+        margin: 0px 5px;
+        outline: none;
+        background-color: #ffb619;
+        font-size: 0;
+    }
+}
+.slick-dots li[class="slick-active"] button {
+    background-color: #1c3e9b;
 }
 .line_grey {
     margin: 0 auto;
@@ -594,6 +613,9 @@ textarea {
     }
     .phone {
         margin: 0;
+        &_yellow {
+            fill: #ffb619;
+        }
     }
     &__content {
         display: flex;
