@@ -17,6 +17,7 @@ $(document).ready(function(){
                 settings: {
                     slidesToShow: 2,
                     dots: true,
+                    arrows: false,
                 }
             },
             {
