@@ -3,8 +3,8 @@ $(document).ready(function(){
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        prevArrow: '<button type="button" class="slick-prev"><div class="slider__arrow_left"></button>',
-        nextArrow: '<button type="button" class="slick-next"><div class="slider__arrow_right"</button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="img/svg/arrow-left.svg"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="img/svg/arrow-right.svg"></button>',
         responsive: [
             {
                 breakpoint: 1200,

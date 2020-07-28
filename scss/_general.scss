@@ -294,67 +294,37 @@ button:hover {
         color: #ccc;
         text-align: center;
     }
+    .slick-prev {
+        border: none;
+        background-color: transparent;
+        outline: none;
+        position: absolute;
+        left: 2%;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 100%;
+        img {
+            width: 30px;
+            height: 15px;
+        }
+    }
+    .slick-next {
+        border: none;
+        background-color: transparent;
+        outline: none;
+        position: absolute;
+        right: 2%;
+        top: 50%;
+        transform: translateY(-50%);
+        height: 100%;
+        img {
+            width: 30px;
+            height: 15px;
+        }
+    }
 }
 .slick-slide:focus {
     outline: none;
-}
-.slick-prev {
-    position: absolute;
-    left: 2%;
-    top: 30%;
-    margin: 50px auto;
-    width: 20px;
-    height: 6px;
-    border: none;
-    background-color: #656565;
-}
-.slick-prev:hover {
-    background-color: #656565;
-    border: none;
-}
-.slick-prev:focus {
-    outline: none;
-}
-.slick-prev:before, .slick-prev:after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-left: none;
-    top: -4px;
-    right: 20px;
-    border-right-color: #656565;
-}
-.slick-next {
-    position: absolute;
-    right: 2%;
-    top: 30%;
-    margin: 50px auto;
-    width: 20px;
-    height: 6px;
-    background-color: #656565;
-    border: none;
-}
-.slick-next:hover {
-    background-color: #656565;
-    border: none;
-}
-.slick-next:focus {
-    outline: none;
-}
-.slick-next:before, .slick-next:after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 0;
-    height: 0;
-    border: 7px solid transparent;
-    border-right: 0;
-    top: -4px;
-    right: -5px;
-    border-left-color: #656565;
 }
 .slick-dots {
     position: absolute;
